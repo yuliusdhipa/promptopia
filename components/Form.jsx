@@ -36,7 +36,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Tag{" "}
             <span className="font-normal">
-              (#product, #webdevelompent, #idea, #etc)
+              (product, webdevelompent, idea, etc)
             </span>
           </span>
           <input
@@ -47,7 +47,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
                 tag: e.target.value,
               })
             }
-            placeholder="#tag"
+            placeholder="tag"
             required
             className="form_input"
           />
