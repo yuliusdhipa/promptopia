@@ -40,7 +40,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           />
 
           <div className="flex flex-col">
-            <h3 className="font-satoshi font-semibold text-gray-900">
+            <h3 className="font-satoshi font-semibold text-gray-900 mark">
               {post.creator.username}
             </h3>
             <p className="font-inter text-sm text-gray-500">
@@ -63,9 +63,9 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
         </div>
       </div>
 
-      <p className="my-4 font-satoshi text-sm text-gray-700">{post.prompt}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-700 mark">{post.prompt}</p>
       <p
-        className="font-inter text-sm blue_gradient cursor-pointer"
+        className="font-inter text-sm blue_gradient cursor-pointer mark"
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
         #{post.tag}
